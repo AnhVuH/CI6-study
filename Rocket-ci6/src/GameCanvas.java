@@ -16,8 +16,10 @@ public class GameCanvas extends JPanel {
     BufferedImage backBuffered;
 
     Graphics graphics;
+    Background background;
     List<Star> stars;
     List<Enemy>  enemies;
+    Player player;
     private Random random = new Random();
     private int countStar =0;
     private int countEnemy =0;
@@ -25,8 +27,8 @@ public class GameCanvas extends JPanel {
 
 
 
-    public int positionXPlayer= 400;
-    public int positionYPlayer = 200;
+//    public int positionXPlayer= 400;
+//    public int positionYPlayer = 200;
 
     public GameCanvas()  {
         this.setSize(1024, 600);
@@ -42,7 +44,9 @@ public class GameCanvas extends JPanel {
     }
 
     private void setupCharacter(){
-        this.playerImage = this.loadImage("resources-rocket/resources/images/circle.png");
+        this.background = new Background(0,0,1024,600,Color.BLACK);
+        this.player = new Player();
+        this.player.position.set(500,300);
 
         this.setupStar();
         this.setupEnemy();
@@ -62,24 +66,25 @@ public class GameCanvas extends JPanel {
     }
 
     public void renderAll(){
-        this.renderBackground();
+        this.background.render(graphics);
 
         this.stars.forEach(star -> star.render(graphics));
         this.enemies.forEach(enemy -> enemy.render(graphics));
 
-        this.graphics.drawImage(this.playerImage, this.positionXPlayer,this.positionYPlayer,50,50,null);
+        this.player.render(graphics);
         this.repaint();
     }
-    private void renderBackground(){
-        this.graphics.setColor(Color.BLACK);
-        this.graphics.fillRect(0,0,1024, 600);
-    }
+//    private void renderBackground(){
+//        this.graphics.setColor(Color.BLACK);
+//        this.graphics.fillRect(0,0,1024, 600);
+//    }
 
     public void runAll(){
         this.createStar();
         this.createEnemy();
         this.stars.forEach(star -> star.run());
         this.enemies.forEach(enemy -> enemy.run());
+//        this.player.run();
 
     }
 
@@ -100,14 +105,24 @@ public class GameCanvas extends JPanel {
 
     }
     private void createEnemy(){
-        if(this.countEnemy==20){
+        if(this.countEnemy==100){
+            int dau = this.random.nextInt(2);
+            if(dau==0) dau =-1;
+            else dau = 1;
+            int velocityX= dau *(this.random.nextInt(4)+1);
+
+            dau= this.random.nextInt(2);
+            if(dau==0) dau =-1;
+            else dau = 1;
+            int velocityY= dau *(this.random.nextInt(4)+1);
+
             Enemy enemy = new Enemy(this.loadImage("resources-rocket/resources/images/circle.png"),
                     this.random.nextInt(1024),
                     this.random.nextInt(600),
                     20,
                     20,
-                    this.random.nextInt(4)+1,
-                    this.random.nextInt(3));
+                    velocityX,
+                    velocityY);
             this.enemies.add(enemy);
             this.countEnemy =0;
         }
