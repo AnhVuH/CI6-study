@@ -38,15 +38,6 @@ public class Vector2D {
         return this.add(vector2D.x , vector2D.y );
     }
 
-/*
-* subtractBy -> thay doi chinh no x2
-* subtract -> vecto moi x2
-* mulitply(number) -> thay doi chinh no -> return this (nhan x, y voi number)
-* length() -> do dai vector
-* copy()-> vector moi
-* rotate(angle: double) ->vecto moi
-* normalize() -> chuan hoa vecto -> vecto moi (x/length, y/length)
-* * */
 
     public Vector2D subtractBy(float x, float y){
         this.x -=x;

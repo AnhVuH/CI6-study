@@ -1,22 +1,20 @@
 import java.awt.*;
-import java.awt.image.BufferedImage;
 
-public class Star {
-    public BufferedImage image;
+public class BulletEnemy {
     public Vector2D position;
-    private ImageRenderer renderer;
     public Vector2D velocity;
+    private ImageRenderer renderer;
 
     //constructor
-
-    public Star() {
+    public BulletEnemy(){
         this.position = new Vector2D();
         this.velocity = new Vector2D();
-        this.renderer = new ImageRenderer("resources-rocket/resources/images/star.png",5,5);
+        this.renderer = new ImageRenderer("resources-rocket/resources/images/circle.png",6,6);
     }
 
     public void run(){
         this.position.addUp(this.velocity);
+
     }
 
     public void render(Graphics graphics){
