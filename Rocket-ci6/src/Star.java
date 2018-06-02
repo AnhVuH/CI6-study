@@ -4,7 +4,7 @@ import java.awt.image.BufferedImage;
 public class Star {
     public BufferedImage image;
     public Vector2D position;
-    private ImageRenderer renderer;
+    private Renderer renderer;
     public Vector2D velocity;
 
     //constructor

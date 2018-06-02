@@ -45,7 +45,7 @@ public class GameCanvas extends JPanel {
 
     private void setupCharacter(){
         this.background = new Background();
-        this.background.color = Color.BLACK;
+
 
         this.setupPlayer();
 

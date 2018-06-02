@@ -14,7 +14,7 @@ public class Player {
     private List<Vector2D> verties;
     private Polygon polygon;
     public double angle = 0.0;
-    private PolygonRenderer renderer;
+    private Renderer renderer;
 
 
     public Player() {
@@ -31,7 +31,7 @@ public class Player {
 
     public void run() {
         this.position.addUp(this.velocity);
-        this.renderer.angle = this.angle;
+        ((PolygonRenderer)this.renderer).angle = this.angle;
         this.backToScreen();
     }
 

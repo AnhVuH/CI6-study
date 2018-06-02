@@ -2,7 +2,7 @@ import java.awt.*;
 import java.util.Arrays;
 import java.util.List;
 
-public class PolygonRenderer {
+public class PolygonRenderer implements Renderer{
     private List<Vector2D> verties;
     private Polygon polygon;
     public double angle =0.0;
@@ -15,6 +15,7 @@ public class PolygonRenderer {
 
     }
 
+    @Override
     public void render(Graphics graphics, Vector2D position){
         graphics.setColor(this.color);
         this.updatePolygon(position);
