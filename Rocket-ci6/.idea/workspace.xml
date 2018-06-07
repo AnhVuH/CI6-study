@@ -3,25 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="5c2790ba-5191-41c2-826b-9911f1efc39d" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Background.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BackgroundRenderer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Bullet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Enemy.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EnemyShoot.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EnemySpawner.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FrameCounter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GameCanvas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameCanvas.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GameObject.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GameWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ImageRenderer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Player.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PlayerMove.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PlayerShoot.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PolygonRenderer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Renderer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Star.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Vector2D.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -51,11 +32,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Bullet.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Bullet.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/game/bullet/Bullet.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="170">
               <caret line="17" column="87" selection-start-line="17" selection-start-column="87" selection-end-line="17" selection-end-column="87" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PlayerShoot.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/game/player/PlayerShoot.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="20" column="35" lean-forward="true" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -78,7 +68,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PlayerMove.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="PlayerMove.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/game/player/PlayerMove.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="306">
@@ -340,7 +330,14 @@
       <option name="project" value="LOCAL" />
       <updated>1527952191375</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="package">
+      <created>1528394689099</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1528394689099</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -355,12 +352,12 @@
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3119015" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3119015" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.203125" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.203125" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
@@ -385,7 +382,8 @@
     <MESSAGE value="add enemyshoot, enemybullet,split render" />
     <MESSAGE value="create renderer interface, speed up player" />
     <MESSAGE value="create GameObject, EnemySpawner, FrameCounter, PlayerMove, PlayerShoot" />
-    <option name="LAST_COMMIT_MESSAGE" value="create GameObject, EnemySpawner, FrameCounter, PlayerMove, PlayerShoot" />
+    <MESSAGE value="package" />
+    <option name="LAST_COMMIT_MESSAGE" value="package" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -690,13 +688,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/bullet/Bullet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="17" column="87" selection-start-line="17" selection-start-column="87" selection-end-line="17" selection-end-column="87" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/renderer/ImageRenderer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -718,13 +709,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/player/PlayerShoot.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/game/enemy/Enemy.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -743,6 +727,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="27" column="24" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/player/PlayerShoot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="20" column="35" lean-forward="true" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/bullet/Bullet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="17" column="87" selection-start-line="17" selection-start-column="87" selection-end-line="17" selection-end-column="87" />
         </state>
       </provider>
     </entry>
